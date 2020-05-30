@@ -38,7 +38,7 @@ class _CSSecretState extends State<CSSecret> {
             Row(
               children: <Widget>[
                 Text(
-                  _show ? widget.secret : RenderEditable.obscuringCharacter * widget.secret.length,
+                  _show ? widget.secret : '•' * widget.secret.length,
                 ),
                 CupertinoButton(
                   child: Icon(
